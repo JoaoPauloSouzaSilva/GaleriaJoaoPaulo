@@ -12,14 +12,24 @@ var modal = document.getElementById("myModal");
 // Obter o elemento <span> que fecha o modal
 var span = document.getElementsByClassName("close")[0];
 
-// Obter o botão que abre o modal
+// Obter as imagens que abrem o modal
 var btns = document.querySelectorAll(".image-post");
 
+// Obter a imagem dentro do modal que será trocada
+var modalImg = document.querySelector(".img-post-modal");
+
+// Para cada imagem com a classe .image-post, adicionar evento de clique
 btns.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      // Quando o usuário clicar no botão, abre o modal
-      modal.style.display = "block";
-    });
+  btn.addEventListener('click', function() {
+    // Pegar o src da imagem clicada
+    var imgSrc = btn.getAttribute('src');
+
+    // Alterar o src da imagem do modal para o da imagem clicada
+    modalImg.setAttribute('src', imgSrc);
+
+    // Quando o usuário clicar na imagem, abre o modal
+    modal.style.display = "block";
+  });
 });
 
 
