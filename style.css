@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:100");
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffffd3;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* STYLES NAVIGATIONBAR */
+.navbar {
+  width: 90%;
+  background-color: #ffffff;
+  padding: 0.8% 1%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.container-logo{
+  margin: 2% 0% 1% 0%;
+  width: 40%;
+}
+
+.logo{
+  width: 100%;
+}
+
+.container-opstions {
+  width: 90%;
+  display: flex;
+  justify-content: left;
+  align-items: self-start;
+  margin-top: 2%;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+.button-active{
+  background-color: #2b2b2c00; 
+  color: #333;
+  border: none;
+  padding: 0.7% 3%;
+  margin: 1% 2% 0% 0%;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 100%;
+  font-weight: 600;
+  border-bottom: solid 3px #3586ff;
+  box-shadow: 2px 2px 4px #00000046;
+  transition: transform 0.3s ease-in-out;
+}
+
+.button {
+  background-color: #2b2b2c00; 
+  color: #333;
+  border: none;
+  padding: 0.7% 3%;
+  margin: 1% 2% 0% 0%;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 100%;
+  font-weight: 600;
+  box-shadow: 2px 2px 4px #00000046;
+  transition: transform 0.3s ease-in-out, border-bottom 0.2s ease-in-out;
+}
+
+.button-active:hover{
+  transform: scale(1.07);
+}
+
+.container-opstions .button:hover {
+  border-bottom: solid 3px #3586ff; 
+  transform: scale(1.07);
+}
+
+/* STYLES DIVISÃO */
+.divisao{
+  width: 92%;
+  margin-top: 0.5%;
+  border: solid 1px ;
+  border-image: linear-gradient(to right, transparent, #3586ff59, #3586ff, #3586ff59, transparent) 1;
+}
+
+/* STYLES POST */
+.main-post{
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-direction: row;
+  margin: 0.5% 0% 1% 0%;
+  margin-bottom: 3%;
+}
+
+.image-post{
+  width: 23%;
+  margin: 1%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px #00000046;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-story{
+  width: 23%;
+  margin: 1%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px #00000046;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-story:hover {
+  transform: scale(1.05);
+}
+
+.image-post:hover{
+  transform: scale(1.05);
+}
+
+
+/* STYLES VOLTAR AO TOPO */
+.back-top{
+  width: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 1s ease, scale 0.9s ease;;
+}
+
+.back-top-icon{
+  font-size: 1.5rem;
+  color: #3586ff;
+}
+
+.back-top-text{
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin: 0;
+  margin-top: 5%;
+  padding: 0;
+  color: #3586ff;
+  font-weight: 700;
+}
+
+.back-top:hover {
+  transform: translateY(-10px);
+}
+
+.back-top:active {
+  transform: scale(0.95);
+} 
+
+
+/* STYLES FOOTER */
+.footer {
+  margin-top: 11%;
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 5s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 5s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+/*____________________________________________________________*/
+
+/* Estilo para o modal (escondido por padrão) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.61); /* Fundo semi-transparente */
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Conteúdo do modal */
+.modal-content {
+  background-color: #fff;
+  margin: 3% auto; 
+  padding: 1%;
+  border-radius: 10px;
+  width: 35%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in-out; /* Animação de entrada suave */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Imagem do modal */
+.img-post-modal{
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Botão de fechar */
+.close {
+  width: 98%;
+  margin-bottom: 0.5%;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+}
+
+/* Animação de entrada suave */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

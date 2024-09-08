@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Galeria Joãop Paulo</title>
+</head>
+<body>
+  <div class="container">
+
+    <!-- NAVIGATIONBAR -->
+    <nav class="navbar">
+      <section class="container-logo">
+        <img class="logo" src="./images/logo-site.png" alt="logo">
+      </section>
+      <section class="container-opstions">
+        <a class="button-active" >Post</a>
+        <a href="./story.html" class="button">Story</a>
+      </section>
+    </nav>
+
+   <!-- DIVISÃO -->
+    <div class="divisao"></div>
+
+    <!-- POSTS -->
+    <main class="main-post">
+      <img src="./images/Post.png" class="image-post" alt="post">
+      <img src="./images/Post.png" class="image-post" alt="post">
+      <img src="./images/Post.png" class="image-post" alt="post">
+      <img src="./images/Post.png" class="image-post" alt="post">
+    </main>
+
+    <!-- VOLTAR AO TOPO -->
+    <a class="back-top" href="./index.html">
+      <ion-icon class="back-top-icon" name="chevron-up-circle-outline"></ion-icon>
+      <p class="back-top-text">Voltar ao Topo</p>
+    </a>
+
+  <!-- Botão para abrir o modal -->
+  <button id="openModal">Abrir Modal</button>
+
+  <!-- Estrutura do modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img class="img-post-modal" src="images/Post.png" alt="post">
+    </div>
+  </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social-icon">
+        <li class="social-icon__item"><a class="social-icon__link" href="www.linkedin.com/in/joaopaulosouzasilva"  target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/JoaoPauloSouzaSilva" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+          </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="https://joaopaulosouzasilva.github.io/Portfolio_SCRUM/" target="_blank">
+            <ion-icon name="rocket-outline"></ion-icon>
+          </a></li>
+      </ul>
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="./index.html">Post</a></li>
+        <li class="menu__item"><a class="menu__link" href="./story.html">Story</a></li>
+      </ul>
+      <p>&copy;2024 João Paulo S. S. | Todos os direitos reservados</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
