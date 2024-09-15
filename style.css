@@ -525,4 +525,86 @@ a{
 
 @media (max-width: 400px) {
   /* Estilos para smartphones pequenos */
+  .navbar {
+    width: 100%;
+  }
+
+  .container-logo{
+    width: 95%;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+
+  .container-opstions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  
+  }
+
+  .button, .button-active {
+    width: 40%;
+    padding: 0.5rem 0rem;
+    font-size: 0.88rem;
+    margin: 0rem 0.4rem;
+  }
+
+  .main-post{
+    width: 100%;
+  }
+
+  .image-post, .image-story{
+    width: 45%;
+    border-radius: 0.6rem;
+    margin: 0.4rem;
+  }
+
+  .back-top{
+    width: 24%;
+  }
+  
+  .logo-whatsapp {
+    width: 12%;
+    bottom: 3%;
+    right: 1%;
+  }
+  
+  .close {
+    width: 4%;
+    font-size: 1.5rem;
+  }
+
+  .modal-content {
+    width: 80%;
+    padding: 1.5%;
+    border-radius: 1.8vw;
+  }
+
+  .modal-content-story {
+    width: 61%;    
+    padding: 1.5%;
+    border-radius: 1.8vw;
+  }
+
+  .img-post-modal, .img-story-modal{
+    border-radius: 1.3vw;
+  } 
+
+  .footer {
+    padding: 1.3rem 0 3.5rem 0;
+  }
+
+  .social-icon__link {
+    font-size: 1.7rem;
+  }
+  
+  .menu__link {
+    font-size: 1.1rem;
+  }
+
+  .footer p {
+    font-size: 0.8rem;
+  }
+
 }
