@@ -120,15 +120,9 @@ a{
   transition: transform 0.3s ease-in-out;
 }
 
-
-.image-story:hover {
+.image-story:hover, .image-post:hover {
   transform: scale(1.05);
 }
-
-.image-post:hover{
-  transform: scale(1.05);
-}
-
 
 /* STYLES VOLTAR AO TOPO */
 .back-top{
@@ -437,6 +431,49 @@ a{
 
 @media (max-width: 768px) {
   /* Estilos para tablets menores */
+  .navbar {
+    width: 95%;
+  }
+
+  .container-logo{
+    width: 55%;
+  }
+
+  .button, .button-active {
+    width: 15%;
+    padding: 0.5rem 0rem;
+  }
+
+  .main-post{
+    width: 98%;
+  }
+
+  .image-post, .image-story{
+    width: 30%;
+  }
+
+  .back-top{
+    width: 12%;
+  }
+  
+  .logo-whatsapp {
+    width: 6%;
+    bottom: 3%;
+    right: 1%;
+  }
+  
+  .close {
+    width: 4%;
+    font-size: 1.4rem;
+  }
+
+  .modal-content {
+    width: 45%;
+  }
+
+  .modal-content-story {
+    width: 32%;
+  }
 }
 
 @media (max-width: 600px) {
