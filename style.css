@@ -430,17 +430,23 @@ a{
   }
 
   .logo-whatsapp {
-    width: 5%;
+    width: 8%;
   }
   
   .close {
     width: 4%;
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 
-  .modal-content {
-    width: 40%;
+  .modal-content, .modal-content-story{
+    width: 50%;
+    padding: 1.5%;
+    border-radius: 1.8vw;
   }
+
+  .img-post-modal, .img-story-modal{
+    border-radius: 1.3vw;
+  } 
 
 }
 
@@ -472,23 +478,26 @@ a{
   }
   
   .logo-whatsapp {
-    width: 6%;
+    width: 8%;
     bottom: 3%;
     right: 1%;
   }
   
   .close {
     width: 4%;
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 
-  .modal-content {
-    width: 45%;
-  }
+  .modal-content, .modal-content-story{
+    width: 65%;
+    padding: 1.5%;
+    border-radius: 1.8vw;
+  } 
 
-  .modal-content-story {
-    width: 32%;
-  }
+  .img-post-modal, .img-story-modal{
+    border-radius: 1.3vw;
+  } 
+
 }
 
 @media (max-width: 600px) {
@@ -519,23 +528,26 @@ a{
   }
   
   .logo-whatsapp {
-    width: 8%;
+    width: 10%;
     bottom: 3%;
     right: 1%;
   }
   
   .close {
     width: 4%;
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 
-  .modal-content {
-    width: 55%;
+ .modal-content-story, .modal-content {
+    width: 75%;
+    padding: 1.5%;
+    border-radius: 1.8vw;
   }
 
-  .modal-content-story {
-    width: 41%;
-  }
+  .img-post-modal, .img-story-modal{
+    border-radius: 1.3vw;
+  } 
+
 }
 
 @media (max-width: 400px) {
@@ -580,24 +592,18 @@ a{
   }
   
   .logo-whatsapp {
-    width: 12%;
+    width: 15%;
     bottom: 3%;
     right: 1%;
   }
   
   .close {
     width: 4%;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
-  .modal-content {
-    width: 80%;
-    padding: 1.5%;
-    border-radius: 1.8vw;
-  }
-
-  .modal-content-story {
-    width: 61%;    
+  .modal-content, .modal-content-story {
+    width: 85%;
     padding: 1.5%;
     border-radius: 1.8vw;
   }
