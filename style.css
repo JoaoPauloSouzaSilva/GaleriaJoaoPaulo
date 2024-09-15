@@ -478,6 +478,49 @@ a{
 
 @media (max-width: 600px) {
   /* Estilos para smartphones */
+  .navbar {
+    width: 95%;
+  }
+
+  .container-logo{
+    width: 65%;
+  }
+
+  .button, .button-active {
+    width: 18%;
+    padding: 0.5rem 0rem;
+  }
+
+  .main-post{
+    width: 98%;
+  }
+
+  .image-post, .image-story{
+    width: 40%;
+  }
+
+  .back-top{
+    width: 15%;
+  }
+  
+  .logo-whatsapp {
+    width: 8%;
+    bottom: 3%;
+    right: 1%;
+  }
+  
+  .close {
+    width: 4%;
+    font-size: 1.4rem;
+  }
+
+  .modal-content {
+    width: 55%;
+  }
+
+  .modal-content-story {
+    width: 41%;
+  }
 }
 
 @media (max-width: 400px) {
