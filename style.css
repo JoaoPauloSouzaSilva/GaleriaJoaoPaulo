@@ -1,28 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lato:100");
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #fff;
   overflow-x: hidden;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
 .container {
-  width: 100vw;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 /* STYLES NAVIGATIONBAR */
 .navbar {
-  width: 90vw;
+  width: 90%;
   background-color: #ffffff;
   padding: 0.5rem 1rem;
   display: flex;
@@ -34,7 +39,7 @@ body {
 
 .container-logo{
   margin: 2rem 0rem 1rem 0rem;
-  width: 40vw;
+  width: 40%;
 }
 
 .logo{
@@ -42,12 +47,11 @@ body {
 }
 
 .container-opstions {
-  width: 90vw;
+  width: 100%;
   display: flex;
   justify-content: left;
   align-items: self-start;
-  margin-top: 2rem;
-  margin-left: 3rem;
+  margin-top: 1rem;
 
 }
 
@@ -55,26 +59,15 @@ a{
   text-decoration: none;
 }
 
-.button-active{
+.button, .button-active {
+  width: 10%;
+  padding: 0.5rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #2b2b2c00; 
   color: #333;
   border: none;
-  padding: 0.6rem 3rem;
-  margin: 1rem 1.5rem 0rem 0rem;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 600;
-  border-bottom: solid 0.2rem #3586ff;
-  box-shadow: 0.1rem 0.1rem 0.3rem #00000046;
-  transition: transform 0.3s ease-in-out;
-}
-
-.button {
-  background-color: #2b2b2c00; 
-  color: #333;
-  border: none;
-  padding: 0.6rem 3rem;
   margin: 1rem 1.5rem 0rem 0rem;
   border-radius: 0.4rem;
   cursor: pointer;
@@ -82,6 +75,10 @@ a{
   font-weight: 600;
   box-shadow: 0.1rem 0.1rem 0.3rem #00000046;
   transition: transform 0.3s ease-in-out, border-bottom 0.2s ease-in-out;
+}
+
+.button-active{
+  border-bottom: solid 0.2rem #3586ff;
 }
 
 .button-active:hover{
@@ -95,7 +92,7 @@ a{
 
 /* STYLES DIVISÃO */
 .divisao{
-  width: 92vw;
+  width: 100%;
   margin-top: 0.7rem;
   border: solid 0.1rem;
   border-image: linear-gradient(to right, #3586ff00, #3586ff88, #3586ff, #3586ff88, #3586ff00) 1;
@@ -103,7 +100,7 @@ a{
 
 /* STYLES POST */
 .main-post{
-  width: 90vw;
+  width: 95%;
   height: auto;
   display: flex;
   flex-wrap: wrap; 
@@ -115,21 +112,14 @@ a{
   margin-bottom: 3rem;
 }
 
-.image-post{
+.image-post, .image-story{
   width: 23%;
-  margin: 0.8rem;
+  margin: 0.5rem;
   border-radius: 1rem;
   box-shadow: 0.1rem 0.1rem 0.3rem #00000046;
   transition: transform 0.3s ease-in-out;
 }
 
-.image-story{
-  width: 23%;
-  margin: 0.8rem;
-  border-radius: 1rem;
-  box-shadow: 0.1rem 0.1rem 0.3rem #00000046;
-  transition: transform 0.3s ease-in-out;
-}
 
 .image-story:hover {
   transform: scale(1.05);
@@ -142,13 +132,13 @@ a{
 
 /* STYLES VOLTAR AO TOPO */
 .back-top{
-  width: 8vw;
+  width: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  transition: transform 1s ease, scale 0.9s ease;;
+  transition: transform 1s ease, scale 0.9s ease;
 }
 
 .back-top-icon{
@@ -157,7 +147,7 @@ a{
 }
 
 .back-top-text{
-  text-transform: uppercase;
+  text-transform: upperc  ase;
   font-size: 0.8rem;
   margin: 0;
   margin-top: 0.6rem;
@@ -177,11 +167,11 @@ a{
 
 /* STYLES FOOTER  PAROU AQUI */
 .footer {
-  width: 100vw;
+  width: 100%;
   margin-top: 9rem;
   position: relative;
   background: #3586ff;
-  min-height: 100px;
+  min-height: 100%;
   padding: 1.3rem 2.8rem;
   display: flex;
   justify-content: center;
@@ -322,7 +312,7 @@ a{
   background-color: #fff;
   padding: 0.6vw;
   border-radius: 1vw;
-  width: 35vw;
+  width: 35%;
   box-shadow: 0.5vw 0.8vw 1vw rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.5s ease-in-out; 
   display: flex;
@@ -345,7 +335,7 @@ a{
   margin: 1vw auto; /*isso que deiza no centro*/
   padding: 0.6vw;
   border-radius: 1vw;
-  width: 23.8vw;
+  width: 24%  ;
   box-shadow: 0.5vw 0.8vw 1vw rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.5s ease-in-out; 
   display: flex;
@@ -356,15 +346,10 @@ a{
 }
 
 /* Imagem do modal */
-.img-post-modal{
+.img-post-modal, .img-story-modal{
   width: 100%;
   border-radius: 0.8vw;
-}
-
-.img-story-modal{
-  width: 100%;
-  border-radius: 0.8vw;
-}
+} 
 
 /* Botão de fechar */
 
@@ -396,15 +381,68 @@ a{
 }
 
 .logo-whatsapp {
-
-  width: 4vw;
+  width: 4%;
   position: fixed;
-  bottom: 1vw;
-  right: 0vw;
+  bottom: 1%;
+  right: 0%;
   z-index: 1001;
   display: flex;
   justify-content: center;
   align-items: end;
-  margin-right: 0.3vw;
+  margin-right: 0.3%;
   filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.3));
+  transition: transform 1s ease, scale 0.9s ease;
+}
+
+.logo-whatsapp:hover {
+  transform: translateY(-10px);
+}
+
+.logo-whatsapp:active {
+  transform: scale(0.95);
+} 
+
+@media (max-width: 1024px) {
+  .navbar {
+    width: 95%;
+  }
+
+  .container-logo{
+    width: 50%;
+  }
+
+  .button, .button-active {
+    width: 12%;
+    padding: 0.5rem 0rem;
+  }
+
+  .main-post{
+    width: 98%;
+  }
+
+  .logo-whatsapp {
+    width: 5%;
+  }
+  
+  .close {
+    width: 4%;
+    font-size: 1.4rem;
+  }
+
+  .modal-content {
+    width: 40%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  /* Estilos para tablets menores */
+}
+
+@media (max-width: 600px) {
+  /* Estilos para smartphones */
+}
+
+@media (max-width: 400px) {
+  /* Estilos para smartphones pequenos */
 }
