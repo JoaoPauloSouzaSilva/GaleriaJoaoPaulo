@@ -297,21 +297,29 @@ a{
 
 /* Estilo para o modal (escondido por padrão) */
 .modal {
+  width: 100%;
+  height: 100%;
   display: none;
   position: fixed;
   z-index: 1002;
   left: 0;
   top: 0;
-  width: 100vw;
-  height: 100vh;
   background-color: rgba(0, 0, 0, 0.61); 
   transition: opacity 0.5s ease-in-out;
+}
+
+/* temporario, não consigo centralizar o .modal-content no .modal*/
+.pre-modal-content{ 
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Conteúdo do modal */
 .modal-content {
   background-color: #fff;
-  margin: 4vw auto; /*isso que coloca no centro*/
   padding: 0.6vw;
   border-radius: 1vw;
   width: 35vw;
